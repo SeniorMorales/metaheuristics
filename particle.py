@@ -7,7 +7,7 @@ class Particle:
     self.position = [random.randrange(0, 100), random.randrange(100)]
     self.fitness  = self.fitness_function(self.position[0], self.position[1])
     self.best_pos = [self.position[0], self.position[1]]
-    self.best_fit = optimization.de_jong(self.best_pos[0], self.best_pos[1])
+    self.best_fit = self.fitness
     self.gradient = [random.randrange(-3, 3), random.randrange(-3, 3)]
 
   def fitness_function(self, x, y):
