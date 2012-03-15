@@ -6,7 +6,7 @@ state = [random.randrange(100), random.randrange(100)]
 neighborhood = [state]
 
 max_eval = 100
-eval_countte_energy = 0
+eval_count_energy = 0
 
 def fitness(state):
   return optimization.de_jong(state[0], state[1])
